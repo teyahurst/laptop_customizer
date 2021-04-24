@@ -1,5 +1,4 @@
 import React from 'react';
-import Total from './Total';
 import USCurrencyFormat from '../../Currency';
 
 function Options(props){
@@ -21,8 +20,7 @@ function Options(props){
       return (
           <div>
               {summary}
-              <Total 
-                state={props.state}/>
+              
 
               
           </div>
