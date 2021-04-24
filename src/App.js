@@ -6,6 +6,8 @@ import Header from './components/Header';
 import MainForm from './components/Form/MainForm';
 import Summary from './components/Summary/Summary';
 
+import FEATURES from './FEATURES';
+
 
 
 class App extends Component {
@@ -50,6 +52,7 @@ class App extends Component {
           <Header />
         <main>
           <MainForm 
+            features={FEATURES}
             state={this.state.selected}
             updateFeature={this.updateFeature}/>
           <Summary  
