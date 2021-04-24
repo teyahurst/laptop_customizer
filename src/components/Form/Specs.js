@@ -1,9 +1,9 @@
 import React from 'react';
 import Parts from './Parts';
-import FEATURES from '../../FEATURES'
+
 
 function Specs(props){
-    const features = Object.keys(FEATURES).map((feature, idx) => {
+    const features = Object.keys(props.features).map((feature, idx) => {
         const featureHash = feature + '-' + idx;
         
   
@@ -14,7 +14,7 @@ function Specs(props){
             </legend>
             <Parts 
                 feature={feature}
-                FEATURES={FEATURES}
+                features={props.features}
                 state={props.state}
                 updateFeature={props.updateFeature}
                 />

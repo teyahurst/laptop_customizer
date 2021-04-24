@@ -4,7 +4,7 @@ import USCurrencyFormat from '../../Currency';
 
 function Parts(props) {
 
-    return props.FEATURES[props.feature].map(item => {
+    return props.features[props.feature].map(item => {
         const itemHash = slugify(JSON.stringify(item));
         return (
           <div key={itemHash} className="feature__item">

@@ -1,6 +1,6 @@
 import React from 'react';
 import Specs from './Specs';
-import FEATURES from '../../FEATURES'
+
 
 
 function MainForm(props){
@@ -8,7 +8,7 @@ function MainForm(props){
         <form className="main__form">
             <h2>Customize your laptop</h2>
                 <Specs 
-                    FEATURES={FEATURES}
+                    features={props.features}
                     state={props.state}
                     updateFeature={props.updateFeature}/>
         </form>
